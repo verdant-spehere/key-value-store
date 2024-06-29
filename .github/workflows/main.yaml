@@ -1,0 +1,13 @@
+name: My Work Flow
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: 
+  push:
+    - main
+    - dev
+jobs: 
+  name: 'Print Log'
+    runs-on: ubuntu-latest
+  
+  steps:
+    - name: 'First Commit'
+      run: echo "This is my GA first push."
